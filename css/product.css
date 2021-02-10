@@ -1,0 +1,66 @@
+article {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(500px, 100%), 0.4fr));
+    gap: 2rem;
+}
+
+h1 {
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+dd {
+    margin-bottom: 1rem;
+}
+
+dt,
+h2 {
+    font-weight: 600;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    margin-top: 0.3rem;
+}
+
+.product-img {
+    width: 30rem;
+    height: auto;
+    overflow: hidden;
+}
+
+.product-img>img {
+    width: 100%;
+    height: auto;
+}
+
+.sizes {
+    display: flex;
+    max-width: 150px;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.sizes>p {
+    margin: 0.4rem 0.5rem;
+    color: rgb(53, 53, 53);
+}
+
+button {
+    border: none;
+    background-color: #D1A585;
+    color: white;
+    padding: 2% 10%;
+    border-radius: 50px;
+    font-weight: 500;
+    font-size: 1.1rem;
+    margin: 1rem 0;
+}
+
+.price {
+    margin-right: 0.5rem;
+    font-size: 20px;
+}
+
+.description>p>strong {
+    font-weight: 500;
+    text-transform: uppercase;
+}
