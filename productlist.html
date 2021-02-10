@@ -13,17 +13,21 @@
 
 <body>
     <header></header>
-    <main></main>
+    <main>
+        <section class="products"></section>
+    </main>
     <template>
         <!--Figure out how to display once price only, show discount and sold out with ::before-->
-        <article class="product-container onDiscount soldOut">
+        <article class="product-container">
             <a href="" alt="" class="image-container"><img src="https://kea-alt-del.dk/t7/images/webp/640/1526.webp"
                     alt=""></a>
             <a href="" class="item-title">Title</a>
             <div class="prices">
                 <p class="price">Price</p>
-                <p class="discounted">Discount price</p>
+                <p class="discounted"></p>
             </div>
+            <p class="percent onSale"></p>
+            <p class="soldOut hide">Sold out</p>
         </article>
     </template>
     <footer></footer>
