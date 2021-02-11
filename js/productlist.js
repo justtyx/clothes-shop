@@ -1,12 +1,17 @@
-const url = 'https://kea-alt-del.dk/t7/api/products';
+//const url = 'https://kea-alt-del.dk/t7/api/products?category=footwear';
+
+const urlParams = new URLSearchParams(window.location.search);
+const category = urlParams.get('category');
+console.log(category);
+const url = 'https://kea-alt-del.dk/t7/api/products?category=' + category;
+
+//document.querySelector('title').textContent = product.category;
 
 fetch(url)
     .then(res=>res.json())
     .then(data=>handleProductList(data));
 
-function handleProductList(data) { 
-    //console.log(data);
-
+function handleProductList(data) {
     data.forEach(showProduct);
  }
 

@@ -4,8 +4,6 @@ const id = urlParams.get('id');
 console.log(id);
 const url = 'https://kea-alt-del.dk/t7/api/products/' + id;
 
-//make this url dynamic ↑
-
 //fetch the data
 fetch(url)
     .then(res=>res.json())
