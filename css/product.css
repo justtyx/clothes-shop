@@ -6,8 +6,8 @@ article {
 }
 
 section.text-material {
-    /*max-width: 700px;*/
-    width: 55vw;
+    max-width: 700px;
+    width: 50vw;
     justify-self: center;
 }
 

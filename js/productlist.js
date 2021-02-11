@@ -1,11 +1,6 @@
-//const url = 'https://kea-alt-del.dk/t7/api/products?category=footwear';
-
 const urlParams = new URLSearchParams(window.location.search);
 const category = urlParams.get('category');
-console.log(category);
 const url = 'https://kea-alt-del.dk/t7/api/products?category=' + category;
-
-//document.querySelector('title').textContent = product.category;
 
 fetch(url)
     .then(res=>res.json())
@@ -15,15 +10,18 @@ function handleProductList(data) {
     data.forEach(showProduct);
  }
 
- function showProduct(product) {
-     console.log(product);
+ 
+  function showProduct(product) {
+    //console.log(product);
+    document.querySelector('.product-list-bread').textContent = product.category;
      //grab the template
     const template = document.querySelector('template').content;
      //clone it 
     const clone = template.cloneNode(true);
      //change content
-     clone.querySelector('.image-container img').src = `https://kea-alt-del.dk/t7/images/webp/640/${product.id}.webp`;
-     clone.querySelector('.image-container img').alt = product.productdisplayname;
+    clone.querySelector('.image-container img').src = `https://kea-alt-del.dk/t7/images/webp/640/${product.id}.webp`;
+    clone.querySelector('.image-container img').alt = product.productdisplayname;
+    clone.querySelector('.item-title').textContent = product.productdisplayname;
     clone.querySelector('.item-title').textContent = product.productdisplayname;
     clone.querySelector('.price').textContent = `${product.price} DKK`;
 

@@ -16,6 +16,9 @@ function showProduct(product) {
     document.querySelector('.text-material h1').textContent = product.productdisplayname;
     document.querySelector('.brand').textContent = product.brandname;
     document.querySelector('.colour').textContent = product.basecolour;
+    document.querySelector('.product-list-bread').textContent = product.category;
+    document.querySelector('.product-list-bread').href = `productlist.html?category=${product.category}`;
+    document.querySelector('.item-name').textContent = product.productdisplayname;
     document.querySelector('.description').innerHTML = product.description;
     document.querySelector('.product-image').src = `https://kea-alt-del.dk/t7/images/webp/640/${product.id}.webp`;
     document.querySelector('.product-image').alt = product.productdisplayname;

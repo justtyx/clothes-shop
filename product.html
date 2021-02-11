@@ -12,13 +12,32 @@
 </head>
 
 <body>
-    <header></header>
+    <header>
+        <nav>
+            <a href="index.html" class="logo"><img src="img/logo.svg" alt="Justty wear logo, home button"></a>
+            <ul class="menu">
+                <a href="">
+                    <li>Men</li>
+                </a>
+                <a href="">
+                    <li>Women</li>
+                </a>
+                <a href="">
+                    <li>Unisex</li>
+                </a>
+                <a href="about.html">
+                    <li>About</li>
+                </a>
+            </ul>
+            <a href="" class="cart"><img src="img/cart.svg" alt="Shopping cart"></a>
+        </nav>
+    </header>
     <main>
         <!--Maybe the breadcrumbs could be a template-->
         <ul class="breadcrumb">
             <li><a href="index.html">Home</a></li>
             <li><a href="category.html">Categories</a></li>
-            <li><a href="productlist.html">Product list</a></li>
+            <li><a href="productlist.html" class="product-list-bread">Product list</a></li>
             <li class="item-name">Product</li>
         </ul>
         <article>
@@ -65,7 +84,13 @@
             </section>
         </article>
     </main>
-    <footer></footer>
+    <footer>
+        <p>&copy; Justina Jemeljanovaite, 2021</p>
+        <p>Note: the source of data was used from a following website: <a
+                href="https://www.kaggle.com/paramaggarwal/fashion-product-images-dataset"
+                target="_blank">https://www.kaggle.com/paramaggarwal/fashion-product-images-dataset</a>
+        </p>
+    </footer>
     <script src="js/product.js"></script>
 </body>
 
