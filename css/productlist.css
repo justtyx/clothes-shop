@@ -14,7 +14,7 @@ article:hover {
     grid-gap: 1.7rem;
     grid-template-columns: repeat(auto-fill, minmax(min(250px, 100%), 0.4fr));
     justify-content: center;
-    margin: 1rem 3rem;
+    margin: 1rem 0;
 }
 
 .image-container {
