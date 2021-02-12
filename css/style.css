@@ -1,11 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
 
+@media (max-width: 780px) {
+
+    body {
+        margin: 0 1rem;
+    }
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', 'Arial', sans-serif;
 }
+
+html {
+    font-size: 100%;
+}
+
 
 body {
     display: grid;
@@ -59,8 +71,12 @@ ul.menu {
     align-self: center;
 }
 
-ul.menu li {
-    padding: 0 1rem;
+ul.menu a {
+    padding: 0 min(1rem, 2%);
+}
+
+ul.menu a>li {
+    font-size: min(4vw, 16px);
 }
 
 a {
@@ -77,9 +93,15 @@ ul {
     justify-content: space-evenly;
 }
 
-ul.breadcrumb li {
+ul.breadcrumb {
+    margin: 0.4rem 0;
+}
+
+ul.breadcrumb li,
+ul.breadcrumb li>a {
     display: inline-block;
-    margin: 0.5rem 0;
+    margin: 0.1rem 0;
+    font-size: min(5w, 15px);
 }
 
 ul.breadcrumb li+li:before {

@@ -6,9 +6,17 @@ article {
 }
 
 section.text-material {
-    max-width: 700px;
-    width: 50vw;
-    justify-self: center;
+    width: clamp(300px, 50%, 50rem);
+}
+
+@media (min-width: 780px) {
+    section.text-material {
+        margin-left: auto;
+    }
+
+    .product-img {
+        margin-right: auto;
+    }
 }
 
 h1 {
@@ -32,7 +40,12 @@ h2 {
     width: 35vw;
     min-width: 350px;
     overflow: hidden;
-    margin-right: 1rem;
+}
+
+@media (max-width: 780px) {
+    .product-img {
+        margin: auto;
+    }
 }
 
 .product-img>img {
