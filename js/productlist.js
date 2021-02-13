@@ -14,6 +14,7 @@ function handleProductList(data) {
   function showProduct(product) {
     //console.log(product);
     document.querySelector('.product-list-bread').textContent = product.category;
+    document.querySelector('title').textContent = product.category;
      //grab the template
     const template = document.querySelector('template').content;
      //clone it 
