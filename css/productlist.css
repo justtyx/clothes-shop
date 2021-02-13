@@ -71,6 +71,12 @@ a.image-container img {
     display: inline;
 }
 
+.filter-and-sort {
+    display: flex;
+    justify-content: space-between;
+    margin: 0.3rem 0;
+}
+
 .soldOut {
     text-transform: uppercase;
     font-weight: 500;

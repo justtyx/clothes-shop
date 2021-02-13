@@ -29,11 +29,11 @@ function showProduct(product) {
     document.querySelector('.previous').textContent = `${product.price} DKK`;
     } else {
         document.querySelector('.price').textContent = `${product.price} DKK`;
-        document.querySelector('.previous').classList.add(hide);
+        document.querySelector('.previous').classList.add('hidden');
     }
 
     if (product.materialcaredesc) {
-        document.querySelector('.materials').classList.remove('hide');
+        document.querySelector('.materials').classList.remove('hidden');
         document.querySelector('.materials dd').innerHTML = product.materialcaredesc;
     }
  }

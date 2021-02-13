@@ -6,10 +6,10 @@ article {
 }
 
 section.text-material {
-    width: clamp(300px, 50%, 50rem);
+    width: clamp(600px, 50%, 50rem);
 }
 
-@media (min-width: 780px) {
+@media (min-width: 1091px) {
     section.text-material {
         margin-left: auto;
     }
@@ -38,11 +38,26 @@ h2 {
 
 .product-img {
     width: 35vw;
-    min-width: 350px;
+    min-width: 300px;
     overflow: hidden;
 }
 
-@media (max-width: 780px) {
+.product-img::before {
+    content: "Sold Out";
+    position: absolute;
+    padding: 1rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    width: 6rem;
+    background-color: #D1A585;
+    color: #ffffff;
+    padding: 1%;
+    border-radius: 5%;
+    text-align: center;
+    margin: 0.1rem 0.7rem 0.5rem 0;
+}
+
+@media (max-width: 1091px) {
     .product-img {
         margin: auto;
     }
@@ -109,7 +124,7 @@ button:hover {
     text-decoration: line-through;
 }
 
-.hide {
+.hidden {
     display: none;
 }
 
