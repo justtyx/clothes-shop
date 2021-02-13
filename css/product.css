@@ -42,16 +42,13 @@ h2 {
     overflow: hidden;
 }
 
-.product-img::before {
-    content: "Sold Out";
-    position: absolute;
-    padding: 1rem;
+.soldout {
+    padding: 0.2rem 0.1rem;
     text-transform: uppercase;
     font-weight: 500;
     width: 6rem;
     background-color: #D1A585;
     color: #ffffff;
-    padding: 1%;
     border-radius: 5%;
     text-align: center;
     margin: 0.1rem 0.7rem 0.5rem 0;
